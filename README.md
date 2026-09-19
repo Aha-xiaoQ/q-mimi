@@ -9,38 +9,30 @@
 
 [看看 Q咪的动作](https://aha-xiaoq.github.io/projects/q-mimi/)
 
-## 在 Codex 桌面端使用
+## 安装并使用
 
-这是一套自定义宠物素材，不是独立桌面程序，也不需要重新生成图片。需要支持 v2 自定义宠物的 Codex 桌面端；以下本地目录方式以 Windows 为例。
+1. 打开 [Q咪网页](https://aha-xiaoq.github.io/projects/q-mimi/)，点击 **安装到 Codex**。
+2. 允许浏览器打开 Codex，在客户端点击 **安装**。
+3. 点击 **使用此宠物**。如果宠物没有显示，在 Codex 输入 `/pet`。
 
-1. [下载素材包](https://aha-xiaoq.github.io/projects/q-mimi/q-mimi.zip)，解压。
-2. 在资源管理器地址栏输入 `%USERPROFILE%\.codex\pets`。目录不存在时创建它，再在里面创建 `q-mimi` 文件夹。
-3. 把解压得到的 `pet.json` 和 `spritesheet.webp` 放入该文件夹。已有同名宠物时先备份，不要直接覆盖自己的修改。
-4. 打开 Codex 的宠物选择界面，刷新列表并选择 **Q咪**。支持此入口的版本可从 **Settings（设置）→ Pets（宠物）** 进入；菜单名称可能随版本调整。
-5. 在输入框输入 `/pet`，或在命令菜单中选择 **Wake Pet**，唤醒宠物；再次输入 `/pet` 可隐藏它。
+也可以 [下载压缩包](https://aha-xiaoq.github.io/projects/q-mimi/q-mimi.zip)，解压后双击 **START.html**，使用同一个安装按钮。此导入方式不用输入命令，也不用自己找目录。
 
-最终目录应是下面这样，不能多套一层解压文件夹：
+需要联网，并已安装支持宠物导入的 Codex 桌面端。没有打开时，先更新客户端后重试。安装和选择宠物需要在客户端确认。
 
-```text
-%USERPROFILE%\.codex\pets\q-mimi\
-├── pet.json
-└── spritesheet.webp
-```
+<details>
+<summary>备用安装方法与常见问题</summary>
 
-如果显式配置了 `CODEX_HOME`，改用该实际目录下的 `pets/q-mimi/`。macOS 默认对应 `~/.codex/pets/q-mimi/`；本项目未对所有系统和客户端版本逐一验证。
+如果客户端不支持导入按钮，可以把解压后的文件夹交给 Codex，并发送：
 
-也可以把解压后的文件夹交给 Codex，并发送下面这段话：
+> 请将这个文件夹里的 Q咪安装为本机自定义宠物。确认实际 CODEX_HOME，把 pet.json 和 spritesheet.webp 放到 pets/q-mimi 下；已有同名文件先备份。保留原图，完成后告诉我如何在宠物列表选择它，并用 /pet 显示。
 
-> 请把这个文件夹中的 Q咪安装为本机自定义宠物。先确认实际 CODEX_HOME，将 pet.json 和 spritesheet.webp 放到 pets/q-mimi 下；如已有同名文件先备份。不要重新生成图片，不要直接修改全局状态文件。完成后告诉我如何在宠物列表选择并唤醒它。
+手动安装：Windows 将 `pet.json` 和 `spritesheet.webp` 放在 `%USERPROFILE%\.codex\pets\q-mimi\`；macOS 对应 `~/.codex/pets/q-mimi/`。若配置过 `CODEX_HOME`，使用该目录下的 `pets/q-mimi/`。覆盖已有文件前先备份。然后在 **设置 → 宠物** 中刷新并选择 **Q咪**，输入 `/pet` 或选择 **Show pet** 显示；菜单名称可能随版本变化。
 
-### 没有显示，怎么办？
+列表中找不到时，检查两个文件是否直接位于 `q-mimi` 文件夹，再刷新列表。宠物不动时，检查系统的“减少动态效果”设置。本包是桌面端 v2 图集，不适用于要求 1536 × 1872 图片的网页上传入口。
 
-- **列表没有 Q咪：**检查目录层级和文件名，确保两个文件在一起；刷新宠物列表，必要时退出并重新打开应用。
-- **选中了但桌面没出现：**用 `/pet` 或 Wake Pet 唤醒；选择与显示是两个步骤。
-- **宠物静止：**检查系统的“减少动态效果”设置；实际动作由应用状态触发，不会像网页预览一样依次播放所有动作。
-- **没有 Pets 或 `/pet` 入口：**先确认是支持宠物的桌面客户端及版本，不要把网页或 IDE 插件当作相同安装入口。本包使用 1536 × 2288 的 v2 图集，不适用于要求 1536 × 1872 图集的网页上传入口。
+桌面端操作可参考 [官方 Pets 说明](https://learn.chatgpt.com/docs/pets)。导入支持情况取决于客户端版本。
 
-入口说明参考 [OpenAI 官方 Pets 文档](https://learn.chatgpt.com/docs/pets)。原 Codex 文档链接现重定向到该页面，页面使用 ChatGPT 桌面端名称；请以自己安装版本的实际界面为准。本地文件安装方式依据 Codex 随附的宠物打包规范。
+</details>
 
 ## 素材
 

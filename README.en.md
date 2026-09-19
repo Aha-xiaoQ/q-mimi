@@ -8,38 +8,30 @@ Q Mimi is a blue-and-yellow cat pet wearing a small golden pixel Q.
 
 [Preview the animations](https://aha-xiaoq.github.io/projects/q-mimi/?lang=en).
 
-### Use in Codex desktop
+## Install and use
 
-This is a custom pet asset pack, not a standalone desktop application. You do not need to regenerate any images. It requires a Codex desktop version that supports v2 custom pets. The local-folder instructions below use Windows as an example.
+1. Open the [Q Mimi page](https://aha-xiaoq.github.io/projects/q-mimi/?lang=en) and click **Install in Codex**.
+2. Allow your browser to open Codex, then click **Install**.
+3. Click **Use this pet**. If the pet is hidden, enter `/pet` in Codex.
 
-1. [Download the asset pack](https://aha-xiaoq.github.io/projects/q-mimi/q-mimi.zip) and extract it.
-2. Enter `%USERPROFILE%\.codex\pets` in the File Explorer address bar. Create the directory if needed, then create a `q-mimi` folder inside it.
-3. Put `pet.json` and `spritesheet.webp` in that folder. Back up any existing files with the same names before replacing them.
-4. Open the pet picker in Codex, refresh the list and select **Q咪**. Versions with this entry may use **Settings → Pets**; labels and locations can vary by version.
-5. Enter `/pet`, or choose **Wake Pet** from the command menu, to show the pet. Enter `/pet` again to hide it.
+Prefer a download? [Download the ZIP](https://aha-xiaoq.github.io/projects/q-mimi/q-mimi.zip), extract it, and double-click **START.en.html** for the same install button. No commands or folder setup needed for this import flow.
 
-The final folder structure should be:
+Requires an internet connection and Codex desktop with pet import support. If nothing opens, update the app and try again. The app asks you to confirm installation and selection.
 
-```text
-%USERPROFILE%\.codex\pets\q-mimi\
-├── pet.json
-└── spritesheet.webp
-```
+<details>
+<summary>Alternative installation and troubleshooting</summary>
 
-Do not leave an extra extracted folder between `q-mimi` and these files. If you explicitly configured `CODEX_HOME`, use `pets/q-mimi/` inside that actual directory instead. The default macOS location is `~/.codex/pets/q-mimi/`. Not all operating systems and client versions have been individually tested.
+If your client does not support the import button, give Codex the extracted folder and ask:
 
-Alternatively, give Codex the extracted folder and this request:
+> Install Q Mimi from this folder as a local custom pet. Confirm the actual CODEX_HOME, copy pet.json and spritesheet.webp into pets/q-mimi, and back up any existing files first. Keep the artwork unchanged. Tell me how to select it in Pets and show it with /pet.
 
-> Install Q Mimi from this folder as a custom pet on this computer. First confirm the actual CODEX_HOME, then place pet.json and spritesheet.webp in pets/q-mimi. Back up existing files with the same names. Do not regenerate the images or directly edit global state files. When finished, explain how to select and wake the pet.
+For manual installation, put `pet.json` and `spritesheet.webp` together in `%USERPROFILE%\.codex\pets\q-mimi\` on Windows, or `~/.codex/pets/q-mimi/` on macOS. If `CODEX_HOME` is configured, use `pets/q-mimi/` inside that directory. Back up existing files before replacing them. In **Settings → Pets**, refresh and select **Q咪**, then enter `/pet` or choose **Show pet**. Labels may vary by app version.
 
-### Troubleshooting
+If Q Mimi is missing, check that the two files are directly inside `q-mimi` and refresh the pet list. If motion is reduced, check your system's reduced-motion setting. This v2 desktop atlas is not compatible with web uploaders requiring a 1536 × 1872 image.
 
-- **Q咪 is missing from the list:** Check the folder nesting and filenames. Keep both files together, refresh the pet list, and restart the app if needed.
-- **Selected but not visible:** Use `/pet` or Wake Pet. Selecting a pet and displaying it are separate steps.
-- **The pet is still:** Check the system's reduced-motion setting. Animations respond to app activity; they do not necessarily cycle through every action as the web preview does.
-- **No Pets or `/pet` entry:** Check that your desktop client and version support pets. Web and IDE interfaces may use different installation methods. This pack uses a 1536 × 2288 v2 atlas and is not compatible with a web uploader that requires a 1536 × 1872 atlas.
+See the [official Pets guide](https://learn.chatgpt.com/docs/pets) for desktop controls. Import support varies by client version.
 
-See the [official OpenAI Pets documentation](https://learn.chatgpt.com/docs/pets). The former Codex documentation link redirects there, and that page uses the ChatGPT desktop name; follow the interface available in your installed version. The local-folder method follows the pet packaging specification bundled with Codex.
+</details>
 
 ### Files
 
