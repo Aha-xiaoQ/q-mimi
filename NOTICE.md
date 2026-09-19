@@ -4,7 +4,7 @@
 
 来源：https://github.com/Aha-xiaoQ/q-mimi
 
-本包中的 spritesheet.webp、preview.gif、pet.json、README.md 及本说明，以授权方有权许可的权利为限，采用 Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0）。完整条款见 LICENSE，或 https://creativecommons.org/licenses/by-nc/4.0/legalcode 。
+本包中的 spritesheet.webp、preview.gif、pet.json、README.md、README.en.md 及本说明，以授权方有权许可的权利为限，采用 Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0）。完整条款见 LICENSE，或 https://creativecommons.org/licenses/by-nc/4.0/legalcode 。
 
 允许非商业使用、分享和修改。公开分享时须按许可证保留署名、来源、许可及免责声明，并标明修改。商业授权请联系：https://github.com/Aha-xiaoQ/q-mimi/issues 。简述不替代许可证完整条款。
 
@@ -18,7 +18,7 @@ Licensor and attribution: 在下_小Q (Aha_xiaoQ)
 
 Source: https://github.com/Aha-xiaoQ/q-mimi
 
-The files `spritesheet.webp`, `preview.gif`, `pet.json`, `README.md` and this notice are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), only to the extent the licensor has the rights to license them. See [LICENSE](LICENSE) or https://creativecommons.org/licenses/by-nc/4.0/legalcode for the full terms.
+The files `spritesheet.webp`, `preview.gif`, `pet.json`, `README.md`, `README.en.md` and this notice are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), only to the extent the licensor has the rights to license them. See [LICENSE](LICENSE) or https://creativecommons.org/licenses/by-nc/4.0/legalcode for the full terms.
 
 Noncommercial use, sharing and adaptation are permitted. When sharing publicly, retain attribution, source, license and disclaimer notices as required by the license, and indicate modifications. For commercial permission, contact https://github.com/Aha-xiaoQ/q-mimi/issues . This summary does not replace the full license.
 
